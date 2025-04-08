@@ -7,10 +7,14 @@ body {
 }
 
 header {
-    background: #333;
-    color: white;
-    padding: 10px 20px;
     text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
 }
 
 nav {
@@ -31,4 +35,11 @@ nav a:hover {
 
 main {
     padding: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    background: #eee;
+    padding: 10px;
+    border-left: 5px solid #333;
 }
