@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Jesús Fergali</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <img src="3.jpg" alt="Jesús Fergali - Contacto" class="banner" />
+  </header>
 
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="sobre.html">Sobre mí</a>
+    <a href="galeria.html">Galería</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main>
+    <h1>Contacto</h1>
+    <p>¿Quieres escribirme? Rellena este formulario y me pondré en contacto contigo.</p>
+
+    <form action="https://formsubmit.co/TUEMAIL@ejemplo.com" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu correo electrónico" required />
+      <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+</body>
+</html>
