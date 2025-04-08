@@ -1,48 +1,70 @@
+/* Estilo general */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
+    color: #333;
+    scroll-behavior: smooth;
 }
 
+/* Encabezado */
 header {
     text-align: center;
-    background-color: #333;
+    background-color: #222;
     color: white;
 }
 
 .banner {
     width: 100%;
     height: auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+/* Navegación */
 nav {
     display: flex;
     justify-content: center;
-    background: #444;
+    background: #333;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav a {
-    padding: 10px 20px;
+    padding: 12px 20px;
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-    background: #666;
+    background: #f0c040;
+    color: #222;
+    border-radius: 4px;
 }
 
+/* Contenido principal */
 main {
-    padding: 20px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
+/* Citas */
 blockquote {
     font-style: italic;
     background: #eee;
-    padding: 10px;
-    border-left: 5px solid #333;
+    padding: 15px;
+    border-left: 5px solid #222;
+    margin: 30px 0;
+    border-radius: 5px;
 }
+
+/* Galería */
 .galeria {
     display: flex;
     flex-wrap: wrap;
@@ -57,34 +79,72 @@ blockquote {
 
 .imagen img {
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
 }
+
+.imagen img:hover {
+    transform: scale(1.03);
+}
+
+/* Formularios */
 form {
     max-width: 600px;
-    margin: 20px auto;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
 input, textarea {
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #f0c040;
+    outline: none;
 }
 
 button {
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
-    background-color: #333;
+    background-color: #222;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Iconos sociales */
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 22px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #f0c040;
 }
