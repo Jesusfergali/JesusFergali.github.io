@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Jesús Fergali</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      text-align: center;
+      background-color: #222;
+      color: white;
+      padding: 40px 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f0c040;
+    }
+    main {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .post {
+      background: white;
+      padding: 25px;
+      margin-bottom: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    .post h2 {
+      margin-top: 0;
+      color: #222;
+    }
+    .post p {
+      line-height: 1.8;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Blog de Jesús Fergali</h1>
+    <p>Reflexiones, relatos y novedades literarias</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="sobre.html">Sobre mí</a>
+    <a href="galeria.html">Galería</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+
+  <main>
+    <div class="post">
+      <h2>Cómo nació mi pasión por crear mundos</h2>
+      <p>Siempre me gustó escribir, pero lo que realmente me fascinaba desde pequeño era imaginar, inventar, crear mundos, situaciones y personajes. Me encantaba el dibujo y pasaba horas dibujando cómics, creando nombres y escenarios. El humor era, y sigue siendo, una fuerza vital en mi forma de crear.
+      </p>
+      <p>En el colegio, no era muy amigo de estudiar, pero destacaba en lengua y plástica, especialmente en todo lo que implicara creación libre. Redacciones, resúmenes, historias con detalles visuales… crear desde el caos, ordenar ideas, contar algo con voz propia, eso me conectaba profundamente con mi esencia.
+      </p>
+      <p>En uno de los momentos más oscuros y duros de mi vida a nivel emocional, volví a lo que me salvaba de niño: la escritura creativa. Recordé lo mucho que disfrutaba esas redacciones libres en el colegio o cuando escribía guiones para escenificaciones en clase. Hace 16 años, sin apenas conocimientos técnicos, pero con toneladas de imaginación, creé mi primera novela. Fue mágico: el tiempo se detenía, los problemas desaparecían y me sentía pleno.
+      </p>
+      <p>Me nutrí de mangas como los de Akira Toriyama, novelas de Stephen King, George Pelecanos o Dennis Lehane. También me atraparon la psicología y la metafísica. Descubrí autores como Wayne Dyer, Robin Sharma, Brian Tracy, Eckhart Tolle, Napoleon Hill, Rhonda Byrne, Alex Rovira, Borja Vilaseca, Miguel Ruiz, Mario Alonso Puig… todos ellos dejaron huella en mí. También soy un cinéfilo empedernido: siempre que veía una película, no podía evitar pensar cómo reescribiría partes del guion para mejorarlas.
+      </p>
+      <p>Con el tiempo, mi escritura se volvió más fluida, las ideas brotaban sin parar. Me formé con cursos de escritura creativa, obtuve el título de novelista, y lo combiné con formación en desarrollo personal, coaching y PNL. Releía libros con enseñanzas profundas y cada historia que escribía era también una transformación interna.
+      </p>
+      <p>Hoy, escribir no es solo una vocación, es un camino de regreso a mí mismo. Y aquí estoy, compartiéndolo contigo.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Jesús Fergali. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/jesusfergali" target="_blank">📷</a>
+      <a href="https://www.tiktok.com/@jesusfergali" target="_blank">🎵</a>
+      <a href="https://twitter.com/jesusfergali" target="_blank">🐦</a>
+      <a href="https://www.youtube.com/@jesusfergali" target="_blank">▶️</a>
+    </div>
+  </footer>
+</body>
+</html>
