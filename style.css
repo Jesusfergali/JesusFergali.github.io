@@ -9,6 +9,39 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Animaciones Reveal */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .imagen {
+        width: 100%;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+}
+
 /* Encabezado */
 header {
     text-align: center;
