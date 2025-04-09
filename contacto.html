@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacto - Jesús Fergali</title>
+  <meta name="description" content="Ponte en contacto con Jesús Fergali, autor de novelas de crecimiento personal y ficción transformadora. Escríbele para colaboraciones, prensa o lectores." />
+  <meta name="keywords" content="Contacto, Jesús Fergali, autor, novelas, colaboración, correo" />
+  <meta name="author" content="Jesús Fergali" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
@@ -17,20 +20,23 @@
     <a href="sobre.html">Sobre mí</a>
     <a href="galeria.html">Galería</a>
     <a href="contacto.html">Contacto</a>
-    <a href="blog.html">blog</a>
+    <a href="blog.html">Blog</a>
   </nav>
 
-  <main>
+  <main class="fade-in">
     <h1>Contacto</h1>
-    <p>¿Quieres escribirme? Rellena este formulario y me pondré en contacto contigo.</p>
+    <p>¿Quieres escribirme? Rellena este formulario y me pondré en contacto contigo lo antes posible. Ya seas lector, periodista, editor o simplemente alguien con curiosidad, ¡me encantará saber de ti!</p>
 
-    <form action="https://formsubmit.co/TUEMAIL@ejemplo.com" method="POST">
+    <form action="https://formsubmit.co/contacto@jesusfergali.com" method="POST">
       <input type="text" name="nombre" placeholder="Tu nombre" required />
       <input type="email" name="email" placeholder="Tu correo electrónico" required />
       <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
-      <button type="submit">Enviar</button>
+      <input type="hidden" name="_next" value="https://jesusfergali.com/gracias.html">
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit">📨 Enviar mensaje</button>
     </form>
   </main>
+
   <footer>
     <p>© 2025 Jesús Fergali. Todos los derechos reservados.</p>
     <div class="social-icons">
@@ -40,8 +46,31 @@
         <a href="https://www.youtube.com/@jesusfergali" target="_blank" aria-label="YouTube">▶️</a>
         <a href="mailto:contacto@jesusfergali.com" aria-label="Email">✉️</a>
     </div>
-</footer>
-</body>
-</html>
+  </footer>
+
+  <script>
+    const elementos = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+    elementos.forEach(el => observer.observe(el));
+  </script>
+
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </body>
 </html>
