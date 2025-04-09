@@ -1,69 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mí - Jesús Fergali</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        .foto-autor {
-            width: 160px;
-            border-radius: 50%;
-            display: block;
-            margin: 20px auto 10px auto;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        .bio {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre mí - Jesús Fergali</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    .foto-autor {
+      width: 160px;
+      border-radius: 50%;
+      display: block;
+      margin: 20px auto 10px auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .bio {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    blockquote {
+      background-color: #f9f9f9;
+      border-left: 5px solid #f0c040;
+      margin: 30px auto;
+      padding: 20px;
+      font-style: italic;
+      font-size: 1.1em;
+      color: #444;
+      border-radius: 8px;
+    }
+
+    .firma-img {
+      display: block;
+      max-width: 160px;
+      margin: 25px auto 0 auto;
+      opacity: 0.85;
+    }
+
+    .firma-nombre {
+      text-align: center;
+      font-family: 'Georgia', serif;
+      margin-top: 5px;
+      color: #444;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    ul li a:hover {
+      color: #f0c040;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="3.jpg" alt="Jesús Fergali - Escritor y Novelista" class="banner">
-    </header>
+  <header>
+    <img src="3.jpg" alt="Jesús Fergali - Escritor y Novelista" class="banner" />
+  </header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="sobre.html">Sobre mí</a>
-        <a href="galeria.html">Galería</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="blog.html">blog</a>
-    </nav>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="sobre.html">Sobre mí</a>
+    <a href="galeria.html">Galería</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="blog.html">Blog</a>
+  </nav>
 
-    <main>
-        <section class="bio">
-            <img src="img/autor.jpg" alt="Jesús Fergali" class="foto-autor">
-            <h1>Jesús Fergali</h1>
-            <p>Jesús Fergali es un escritor español que ha dedicado su vida a convertir las palabras en experiencias inolvidables a través de sus historias. Su pasión por la escritura comenzó desde temprana edad, y a lo largo de los años ha perfeccionado su arte para crear obras literarias que cautivan a sus lectores.</p>
-            <p>Con un estilo que fusiona ficción llena de intriga y suspense, filosofía práctica y enseñanzas de crecimiento personal, Jesús trasciende las páginas para ofrecer mucho más que entretenimiento: un viaje hacia el autodescubrimiento. Sus libros son ideales para quienes buscan inspiración tanto para el corazón como para la mente.</p>
-            <blockquote>
-                "La vida está hecha para ser vivida con valentía, siendo tú mismo, sin importar lo que otros piensen. Siempre será mejor arriesgarse que arrepentirse por no haberlo hecho. Actúa, aunque tengas que corregir el rumbo en el camino, porque al menos lo habrás intentado. Así como yo me lancé a escribir, a pesar de las dudas y de quienes quisieron cortar mis alas, hoy sé que el verdadero coraje es atreverse, aunque tiemble el corazón."
-            </blockquote>
-        </section>
+  <main>
+    <section class="bio fade-in">
+      <img src="img/autor.jpg" alt="Jesús Fergali" class="foto-autor" />
+      <h1>Jesús Fergali</h1>
+      <p><em>“Escribo para tocar almas, no solo páginas.”</em></p>
+      <p>Jesús Fergali es un escritor español que ha dedicado su vida a convertir las palabras en experiencias inolvidables a través de sus historias. Su pasión por la escritura comenzó desde temprana edad, y a lo largo de los años ha perfeccionado su arte para crear obras literarias que cautivan a sus lectores.</p>
+      <p>Con un estilo que fusiona ficción llena de intriga y suspense, filosofía práctica y enseñanzas de crecimiento personal, Jesús trasciende las páginas para ofrecer mucho más que entretenimiento: un viaje hacia el autodescubrimiento. Sus libros son ideales para quienes buscan inspiración tanto para el corazón como para la mente.</p>
+      <blockquote>
+        "La vida está hecha para ser vivida con valentía, siendo tú mismo, sin importar lo que otros piensen. Siempre será mejor arriesgarse que arrepentirse por no haberlo hecho. Así como yo me lancé a escribir, a pesar de las dudas y de quienes quisieron cortar mis alas, hoy sé que el verdadero coraje es atreverse, aunque tiemble el corazón."
+      </blockquote>
+      <img src="img/firma.jpg" alt="Firma de Jesús Fergali" class="firma-img" />
+      <p class="firma-nombre">Jesús Fergali</p>
+    </section>
 
-        <section class="bio">
-            <h3>📚 Enlaces destacados</h3>
-            <ul>
-                <li><a href="https://www.amazon.com/stores/Jes%C3%BAs-Fergali/author/B0DTFWQSYC" target="_blank">🌟 Mi perfil de autor en Amazon</a></li>
-                <li><a href="https://www.amazon.com/Jes%C3%BAs-Fergali-ebook/dp/B0DTFLCWHZ" target="_blank">📘 Leer *Caminos de Sabiduría: Raíces de Coraje* en Amazon</a></li>
-                <li><a href="https://quelibroleo.com/caminos-de-sabiduria--raices-de-coraje" target="_blank">🧠 Opiniones en QuéLibroLeo</a></li>
-            </ul>
-        </section>
-    </main>
+    <section class="bio fade-in">
+      <h3>📚 Enlaces destacados</h3>
+      <ul>
+        <li><a href="https://www.amazon.com/stores/Jes%C3%BAs-Fergali/author/B0DTFWQSYC" target="_blank">🌟 Perfil de autor en Amazon</a></li>
+        <li><a href="https://www.amazon.com/Jes%C3%BAs-Fergali-ebook/dp/B0DTFLCWHZ" target="_blank">📘 Leer *Caminos de Sabiduría*</a></li>
+        <li><a href="https://quelibroleo.com/caminos-de-sabiduria--raices-de-coraje" target="_blank">🧠 Opiniones en QuéLibroLeo</a></li>
+      </ul>
+    </section>
+  </main>
 
-    <footer>
-        <p>© 2025 Jesús Fergali. Todos los derechos reservados.</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/jesusfergali" target="_blank" aria-label="Instagram">📷</a>
-            <a href="https://www.tiktok.com/@jesusfergali" target="_blank" aria-label="TikTok">🎵</a>
-            <a href="https://twitter.com/jesusfergali" target="_blank" aria-label="Twitter">🐦</a>
-            <a href="https://www.youtube.com/@jesusfergali" target="_blank" aria-label="YouTube">▶️</a>
-            <a href="mailto:contacto@jesusfergali.com" aria-label="Email">✉️</a>
-        </div>
-    </footer>
+  <footer>
+    <p>© 2025 Jesús Fergali. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/jesusfergali" target="_blank" aria-label="Instagram">📷</a>
+      <a href="https://www.tiktok.com/@jesusfergali" target="_blank" aria-label="TikTok">🎵</a>
+      <a href="https://twitter.com/jesusfergali" target="_blank" aria-label="Twitter">🐦</a>
+      <a href="https://www.youtube.com/@jesusfergali" target="_blank" aria-label="YouTube">▶️</a>
+      <a href="mailto:contacto@jesusfergali.com" aria-label="Email">✉️</a>
+    </div>
+  </footer>
+
+  <!-- Script para fade-in -->
+  <script>
+    const elementos = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    elementos.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
