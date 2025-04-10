@@ -1,45 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jesús Fergali - Escritor y Creador de Mundos</title>
-    <meta name="description" content="Sitio oficial de Jesús Fergali, autor de novelas inspiradoras de ficción y crecimiento personal. Descubre sus libros, historias y reflexiones que transforman." />
-    <meta name="keywords" content="Jesús Fergali, escritor, novelas, desarrollo personal, crecimiento interior, ficción transformadora, autor español, libros motivadores" />
-    <meta name="author" content="Jesús Fergali" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jesús Fergali - Escritor y Creador de Mundos</title>
+  <meta name="description" content="Sitio oficial de Jesús Fergali, autor de novelas inspiradoras de ficción y crecimiento personal. Descubre sus libros, historias y reflexiones que transforman." />
+  <meta name="keywords" content="Jesús Fergali, escritor, novelas, desarrollo personal, crecimiento interior, ficción transformadora, autor español, libros motivadores" />
+  <meta name="author" content="Jesús Fergali" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .cta-boton {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 24px;
+      background-color: #f0c040;
+      color: #222;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta-boton:hover {
+      background-color: #e2b128;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="banner_inicio.jpg" alt="Jesús Fergali - Escritor y Novelista" class="banner">
-    </header>
+  <header>
+    <img src="banner_inicio.jpg" alt="Jesús Fergali - Escritor y Novelista" class="banner" />
+  </header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="sobre.html">Sobre mí</a>
-        <a href="galeria.html">Galería</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="blog.html">Blog</a>
-    </nav>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="sobre.html">Sobre mí</a>
+    <a href="galeria.html">Galería</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="blog.html">Blog</a>
+  </nav>
 
-    <main class="fade-in">
-        <h2>Jesús Fergali</h2>
-        <p>Sumérgete en el mundo de la escritura y la creatividad con Jesús Fergali. Descubre sus historias cautivadoras y su estilo único que te transportará a otros mundos. Bienvenidos a mi rincón literario, donde las historias y la sabiduría se entrelazan para inspirar, transformar y explorar lo más profundo de la conciencia humana.</p>
+  <main class="fade-in">
+    <h2>Jesús Fergali</h2>
+    <p>Sumérgete en el mundo de la escritura y la creatividad con Jesús Fergali. Descubre sus historias cautivadoras y su estilo único que te transportará a otros mundos. Bienvenido a mi rincón literario, donde las historias y la sabiduría se entrelazan para inspirar, transformar y explorar lo más profundo de la conciencia humana.</p>
 
-        <h3><em>Autor de Ficción con Enfoque en el Crecimiento Personal</em></h3>
-    </main>
+    <h3><em>Autor de Ficción con Enfoque en el Crecimiento Personal</em></h3>
 
-    <footer>
-        <p>© 2025 Jesús Fergali. Todos los derechos reservados.</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/jesusfergali" target="_blank" aria-label="Instagram">📷</a>
-            <a href="https://www.tiktok.com/@jesusfergali" target="_blank" aria-label="TikTok">🎵</a>
-            <a href="https://twitter.com/jesusfergali" target="_blank" aria-label="Twitter">🐦</a>
-            <a href="https://www.youtube.com/@jesusfergali" target="_blank" aria-label="YouTube">▶️</a>
-            <a href="mailto:info@jesusfergali.com" aria-label="Email">✉️</a>
-        </div>
-    </footer>
+    <a href="https://www.amazon.es/stores/Jes%C3%BAs-Fergali/author/B0DTFWQSYC" class="cta-boton" target="_blank">📚 Ver mis libros en Amazon</a>
+  </main>
+
+  <footer>
+    <p>© 2025 Jesús Fergali. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/jesusfergali" target="_blank" aria-label="Instagram">📷</a>
+      <a href="https://www.tiktok.com/@jesusfergali" target="_blank" aria-label="TikTok">🎵</a>
+      <a href="https://twitter.com/jesusfergali" target="_blank" aria-label="Twitter">🐦</a>
+      <a href="https://www.youtube.com/@jesusfergali" target="_blank" aria-label="YouTube">▶️</a>
+      <a href="mailto:info@jesusfergali.com" aria-label="Email">✉️</a>
+    </div>
+  </footer>
+
+  <script>
+    const elementos = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+    elementos.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
-
