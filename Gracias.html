@@ -7,54 +7,6 @@
   <meta name="description" content="Gracias por ponerte en contacto con Jesús Fergali. Recibirás una respuesta muy pronto.">
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-</head>
-<body>
-  <header>
-    <img src="Banner_Profesional_15.jpg" alt="Jesús Fergali - Gracias" class="banner">
-  </header>
-
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="sobre.html">Sobre mí</a>
-    <a href="galeria.html">Galería</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="blog.html">Blog</a>
-  </nav>
-
-  <main class="fade-in">
-    <h1>¡Gracias por tu mensaje!</h1>
-    <p>Tu mensaje ha sido enviado con éxito. Me pondré en contacto contigo lo antes posible.</p>
-
-    <blockquote>
-      Quiero expresar mi profundo agradecimiento a mis amigos, a otros familiares y a todas aquellas personas que han cruzado su camino conmigo, dejando una huella imborrable en mi vida. A mis profesores, cuya sabiduría iluminó mi camino; a mis compañeros de trabajo, que me impulsaron a ser mejor cada día; y a esos grandes escritores, mis verdaderos maestros e inspiradores, que con su arte me enseñaron a transformar el dolor en belleza y a encontrar en las palabras el poder de sanar.<br><br>
-      A todos los que creen en la fuerza del silencio, en el poder de una decisión tomada con calma en medio de la tormenta. A los que han tenido que luchar con su propia oscuridad, y a los que, a pesar de todo, siguen buscando la luz en cada paso.
-      <br><br>
-      Con todo mi amor y gratitud,<br>
-      <strong>Jesús Fergali</strong>
-    </blockquote>
-
-    <p class="frase">💡 "Ser auténtico es tener el coraje de honrar tu esencia, incluso cuando el mundo espera otra versión de ti. Crea, sueña, resiste… y no cuentes tus pasos hasta que llegues. Deja que tus logros hablen por ti."</p>
-
-    <p>📚 <a href="https://www.amazon.es/stores/Jes%C3%BAs-Fergali/author/B0DTFWQSYC" target="_blank">Visita mi perfil de autor en Amazon →</a></p>
-    <p><a href="index.html">← Volver al inicio</a></p>
-  </main>
-
-  <footer>
-    <p>© 2025 Jesús Fergali. Todos los derechos reservados.</p>
-  </footer>
-
-  <script>
-    const elementos = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    });
-    elementos.forEach(el => observer.observe(el));
-  </script>
-
   <style>
     .fade-in {
       opacity: 0;
@@ -90,6 +42,22 @@
       margin: 30px auto;
     }
 
+    .boton {
+      display: inline-block;
+      margin: 25px 10px;
+      padding: 12px 24px;
+      background-color: #f0c040;
+      color: #222;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .boton:hover {
+      background-color: #e2b128;
+    }
+
     a {
       color: #0066cc;
       text-decoration: none;
@@ -99,5 +67,60 @@
       text-decoration: underline;
     }
   </style>
+</head>
+<body>
+  <header>
+    <img src="Banner_Profesional_15.jpg" alt="Jesús Fergali - Gracias" class="banner">
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="sobre.html">Sobre mí</a>
+    <a href="galeria.html">Galería</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+
+  <main class="fade-in">
+    <h1>¡Gracias por tu mensaje!</h1>
+    <p>Tu mensaje ha sido enviado con éxito. Me pondré en contacto contigo lo antes posible.</p>
+
+    <blockquote>
+      Quiero expresar mi profundo agradecimiento a mis amigos, a otros familiares y a todas aquellas personas que han cruzado su camino conmigo, dejando una huella imborrable en mi vida. A mis profesores, cuya sabiduría iluminó mi camino; a mis compañeros de trabajo, que me impulsaron a ser mejor cada día; y a esos grandes escritores, mis verdaderos maestros e inspiradores, que con su arte me enseñaron a transformar el dolor en belleza y a encontrar en las palabras el poder de sanar.
+      <br><br>
+      A todos los que creen en la fuerza del silencio, en el poder de una decisión tomada con calma en medio de la tormenta. A los que han tenido que luchar con su propia oscuridad, y a los que, a pesar de todo, siguen buscando la luz en cada paso.
+      <br><br>
+      Con todo mi amor y gratitud,<br>
+      <strong>Jesús Fergali</strong>
+    </blockquote>
+
+    <p class="frase">💡 "Ser auténtico es tener el coraje de honrar tu esencia, incluso cuando el mundo espera otra versión de ti. Crea, sueña, resiste… y no cuentes tus pasos hasta que llegues. Deja que tus logros hablen por ti."</p>
+
+    <a href="https://www.amazon.es/stores/Jes%C3%As-Fergali/author/B0DTFWQSYC" target="_blank" class="boton">📚 Ver mis libros en Amazon</a>
+    <a href="index.html" class="boton">← Volver al inicio</a>
+  </main>
+
+  <footer>
+    <p>© 2025 Jesús Fergali. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/jesusfergali" target="_blank" aria-label="Instagram">📷</a>
+      <a href="https://www.tiktok.com/@jesusfergali" target="_blank" aria-label="TikTok">🎵</a>
+      <a href="https://twitter.com/jesusfergali" target="_blank" aria-label="Twitter">🐦</a>
+      <a href="https://www.youtube.com/@jesusfergali" target="_blank" aria-label="YouTube">▶️</a>
+      <a href="mailto:info@jesusfergali.com" aria-label="Email">✉️</a>
+    </div>
+  </footer>
+
+  <script>
+    const elementos = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+    elementos.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
